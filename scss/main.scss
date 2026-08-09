@@ -1,0 +1,9 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'base/reset';
+
+body{
+  font-family:$font-primary;
+  background-color:$color-bg-dark;
+  color:$color-text-light;
+}

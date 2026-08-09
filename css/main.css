@@ -17,3 +17,9 @@ img {
   max-width: 100%;
   display: block;
 }
+
+body {
+  font-family: "Century Gothic", sans-serif;
+  background-color: #0b0b17;
+  color: #f5f6fa;
+}/*# sourceMappingURL=main.css.map */
