@@ -1,0 +1,25 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.creators-holders {
+  @include flex(column, center, stretch, $space-5);
+  padding: $space-6 $space-4;
+  margin: $space-6;
+
+  @include respond(768px){
+    @include flex(row,center,stretch, $space-5);
+  }
+  &-image{
+    width: 100%;
+
+    @include respond(768px){
+      width:50%;
+    }
+  }
+}
+  .ch-img-2{
+    margin-top:$space-6;
+  }
+  .ch-img-1{
+    margin-bottom:$space-6;
+  }

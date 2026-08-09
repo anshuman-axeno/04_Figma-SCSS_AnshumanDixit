@@ -3,6 +3,7 @@
 @use 'base/reset';
 @use 'layout/navbar';
 @use 'layout/hero';
+@use 'layout/features';
 
 body{
   font-family:$font-primary;
