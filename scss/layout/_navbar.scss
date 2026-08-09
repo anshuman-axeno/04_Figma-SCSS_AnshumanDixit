@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.header-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: $space-3 $space-4;
+  background:none;
+
+  &-links{
+    display:none;
+
+    @include respond(768px){
+      display:flex;
+      gap: $space-5;
+      font-size:0.9rem;
+      color: $color-text-muted;
+    }
+  }
+  &-actions{
+    display:flex;
+    gap: $space-3;
+
+    button{
+      background:none;
+      border:none;
+      color:$color-text-light;
+      cursor:pointer;
+    }
+    .header-signup{
+      border:1px solid $color-primary;
+      border-radius:999px;
+      padding: $space-2 $space-5;
+    }
+  }
+
+}

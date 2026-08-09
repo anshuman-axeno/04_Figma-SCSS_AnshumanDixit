@@ -18,8 +18,122 @@ img {
   display: block;
 }
 
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: none;
+}
+.header-nav-links {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+    color: #DDE2FF;
+  }
+}
+.header-nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+.header-nav-actions button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.header-nav-actions .header-signup {
+  border: 1px solid #22A75D;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  margin: 0px;
+}
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+    padding: 3rem 0 3rem 1.5rem;
+  }
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .hero-text {
+    margin-left: 3rem;
+  }
+}
+.hero-text h1 {
+  font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+.hero-text p:first-child {
+  color: #22A75D;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.hero-text button {
+  align-self: center;
+  background-color: #22A75D;
+  color: white;
+  cursor: pointer;
+  border-radius: 52px;
+  padding: 0.8rem 3rem;
+  border: none;
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .hero-text button {
+    align-self: flex-start;
+  }
+}
+.hero-image {
+  flex: 2;
+}
+.hero-image img {
+  width: 100%;
+  max-width: none;
+}
+.hero-text-2 {
+  color: #DDE2FF;
+}
+
 body {
   font-family: "Century Gothic", sans-serif;
   background-color: #0b0b17;
-  color: #f5f6fa;
+  color: #fff;
+}
+
+.header-hero {
+  background-image: url("../assets/pictures/Frame 45 (1).png");
 }/*# sourceMappingURL=main.css.map */

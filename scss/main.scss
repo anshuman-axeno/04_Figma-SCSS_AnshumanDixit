@@ -1,9 +1,16 @@
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
 @use 'base/reset';
+@use 'layout/navbar';
+@use 'layout/hero';
 
 body{
   font-family:$font-primary;
   background-color:$color-bg-dark;
   color:$color-text-light;
+  //background-image:url('../assets/pictures/Frame 45 (1).png');
+}
+.header-hero{
+    background-image:url('../assets/pictures/Frame 45 (1).png');
+
 }
