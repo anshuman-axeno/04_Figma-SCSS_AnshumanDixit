@@ -4,6 +4,7 @@
 @use 'layout/navbar';
 @use 'layout/hero';
 @use 'layout/features';
+@use 'layout/diff';
 
 body{
   font-family:$font-primary;
