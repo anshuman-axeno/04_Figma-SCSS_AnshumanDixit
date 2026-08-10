@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -375,6 +376,96 @@ img {
 .presale-phase p {
   font-size: 0.85rem;
   color: #555;
+}
+
+.end {
+  background-image: url("../../assets/pictures/Ресурс 1@4x 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.how-to-buy {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.how-to-buy h2 {
+  margin-bottom: 3rem;
+  color: #fff;
+  width: 100%;
+}
+.how-to-buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .how-to-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+}
+.how-to-buy [class^=buy-] {
+  background-color: #171B29;
+  border-radius: 16px;
+  padding: 1.5rem;
+  flex: 1;
+  max-width: 260px;
+  text-align: left;
+}
+.how-to-buy [class^=buy-] p {
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #DDE2FF;
+}
+footer .footer-links a {
+  text-decoration: underline;
+}
+footer .footer-line {
+  width: 100%;
+  max-width: 900px;
+}
+footer .footer-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  footer a:has(.footer-logo),
+  footer img[alt="Social Media Links"],
+  footer p {
+    display: inline-flex;
+  }
 }
 
 body {

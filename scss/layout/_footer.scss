@@ -1,0 +1,74 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.end{
+  background-image:url('../../assets/pictures/Ресурс 1@4x 2.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.how-to-buy{
+  padding:$space-6 $space-4;
+  text-align:center;
+
+  h2{
+    margin-bottom:$space-6;
+    color: $color-text-light;
+    width:100%;
+  }
+    @include flex(column, center, stretch, $space-4);
+    @include respond(768px) {
+      @include flex(row, center, center, $space-4);
+      flex-wrap:wrap;
+    }
+  
+  [class^="buy-"]{
+    background-color:#171B29;
+    border-radius:16px;
+    padding: $space-4;
+    flex:1;
+    max-width:260px;
+    text-align:left;
+
+  p{
+    font-size:0.85rem;
+    color: $color-text-light;
+  }
+}
+}
+footer{
+  @include flex(column, center, center, $space-4);
+  padding:$space-6 $space-4;
+  text-align:center;
+
+  .footer-links{
+    @include flex(row,center,center, $space-5);
+    flex-wrap:wrap;
+    font-size:0.8rem;
+    font-weight:600;
+    text-transform:uppercase;
+    color:$color-text-muted;
+
+    a{
+      text-decoration:underline;
+
+    }
+    }
+    .footer-line{
+      width:100%;
+      max-width:900px;
+
+    }
+    .footer-bottom {
+    width: 100%;
+    @include flex(row, space-between, center, $space-4);
+}
+    @include respond(768px){
+      a:has(.footer-logo),
+      img[alt="Social Media Links"],
+      p{
+        display:inline-flex;
+      }
+    }
+  }
