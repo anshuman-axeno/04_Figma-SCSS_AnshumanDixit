@@ -230,6 +230,77 @@ img {
   padding-left: 1.2rem;
 }
 
+.tokner-coming {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .tokner-coming {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+  }
+}
+.tokner-coming-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+  max-width: 65ch;
+  flex: 1;
+  margin-left: 5rem;
+}
+.tokner-coming-text img {
+  width: 40px;
+  align-self: center;
+}
+@media (min-width: 1024px) {
+  .tokner-coming-text img {
+    align-self: flex-start;
+  }
+}
+.tokner-coming-text h2 {
+  font-size: 1.75rem;
+}
+.tokner-coming-text p {
+  color: #DDE2FF;
+  font-size: 0.7rem;
+}
+.tokner-coming-text button {
+  align-self: center;
+  background-color: #0F1320;
+  border: 1px solid #22A75D;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  color: white;
+}
+@media (min-width: 1024px) {
+  .tokner-coming-text button {
+    align-self: flex-start;
+  }
+}
+.tokner-coming-image {
+  flex: 1;
+}
+.tokner-coming-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.tokner-coming-image {
+  margin-right: 0;
+}
+
 body {
   font-family: "Century Gothic", sans-serif;
   background-color: #0F1320;
