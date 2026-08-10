@@ -190,6 +190,46 @@ img {
   }
 }
 
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 10rem 3rem;
+}
+@media (min-width: 768px) {
+  .roadmap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+.roadmap-wrapper {
+  flex: 1 1 200px;
+}
+.roadmap-wrapper img {
+  margin-bottom: 0;
+}
+.roadmap-wrapper h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.roadmap-wrapper ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #DDE2FF;
+  padding-left: 1.2rem;
+}
+
 body {
   font-family: "Century Gothic", sans-serif;
   background-color: #0F1320;
