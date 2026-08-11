@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <div class="header-hero">
   <header class="site-header" >
     <nav class="header-nav">
@@ -14,10 +15,10 @@
         <img src="./assets/pictures/logo_colored_sign_black_text.svg" alt="Tokners Logo" class="header-logo">
       </a>
       <ul class="header-nav-links">
-        <li><a href="">Our Team</a></li>
-        <li><a href="">Tokens</a></li>
-        <li><a href="">Connect Wallet</a></li>
-        <li><a href="">LightPaper</a></li>
+        <li><a href="#hero">Our Team</a></li>
+        <li><a href="#hero">Tokens</a></li>
+        <li><a href="#hero">Connect Wallet</a></li>
+        <li><a href="#hero">LightPaper</a></li>
       </ul> 
       <div class="header-nav-actions">
         <button class="header-signin">Sign in</button>
@@ -25,7 +26,7 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <section class="hero" id="hero">
       <div class="hero-text">
         <p>At Tokners we are</p>
@@ -39,16 +40,30 @@
     </section>
     </div>
     <section class="creators-holders">
-      <img src="assets/pictures/Group 31.png" alt="For Creators" class="creators-holders-image ch-img-1">
-      <img src="assets/pictures/Group 32.png" alt="For Holders" class="creators-holders-image ch-img-2">
-    </section>
+    <div class="ch-card ch-card-creators">
+    <div class="ch-icon" aria-hidden="true">
+      <!-- crown icon SVG or img alt="" -->
+    </div>
+    <h3>For <a href="#creators-learn-more" class="ch-highlight">Creators</a></h3>
+    <p>Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.</p>
+    <a href="#creators-learn-more" class="ch-learn-more">Learn More →</a>
+  </div>
+
+  <div class="ch-card ch-card-holders">
+    <div class="ch-icon" aria-hidden="true">
+    </div>
+    <h3>For <a href="#holders-learn-more" class="ch-highlight">Holders</a></h3>
+    <p>Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early-access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.</p>
+    <a href="#holders-learn-more" class="ch-learn-more">Learn More →</a>
+  </div>
+</section>
     <section class="different">
       <img src="assets/pictures/Group 34.png" class="different-1">
       <img src="assets/pictures/Group 36.png" alt="What makes us different" class="different-image different-2">
     </section>
     <section class="roadmap">
       <article class="roadmap-wrapper">
-        <img src="assets/pictures/Ellipse 18.png" alt="Q1">
+        <img src="assets/pictures/Ellipse 18.png" alt="Quarter 1 details">
         <h3>2021</h3>
         <ol>
           <li>Team set-up</li>
@@ -56,7 +71,7 @@
         </ol>
       </article>
       <article class="roadmap-wrapper">
-        <img src="assets/pictures/Ellipse 19.png" alt="Q2">
+        <img src="assets/pictures/Ellipse 19.png" alt="Quarter 2 details">
         <h3>2021</h3>
         <ol>
           <li>Presale and exchange listings </li>
@@ -67,7 +82,7 @@
         </ol>
       </article>
       <article class="roadmap-wrapper">
-        <img src="assets/pictures/Ellipse 20.png" alt="Q3">
+        <img src="assets/pictures/Ellipse 20.png" alt="Quarter 3 details">
         <h3>2021</h3>
         <ol>
           <li>Celebrity, Creator and Influencer partnerships</li>
@@ -76,7 +91,7 @@
         </ol>
       </article>
       <article class="roadmap-wrapper">
-        <img src="assets/pictures/Ellipse 21.png" alt="Q4">
+        <img src="assets/pictures/Ellipse 21.png" alt="Quarter 4 details">
         <h3>2021</h3>
         <ol>
           <li>Mainstream partnerships</li>
@@ -101,7 +116,7 @@
         <button>Read More</button>
       </div>
       <div class="tokner-coming-image">
-        <img src="assets/pictures/Woman-Holding-iPhone-Xs-in-Hand-Mockup 1.png" alt="Tokner Coming Image">
+        <img src="assets/pictures/Woman-Holding-iPhone-Xs-in-Hand-Mockup 1.png" alt="Tokner Coming (Phone in hand)">
       </div>
     </section>
     <section class="presale">
@@ -109,7 +124,7 @@
       <div class="presale-cards">
       <div class="presale-phase card-1">
         <div>
-        <img src="assets/pictures/Ellipse 18.png" alt="Phase one">
+        <img src="assets/pictures/Ellipse 18.png" alt="">
         <p>01</p>
         </div>
         <h3>Phase One</h3>
@@ -120,7 +135,7 @@
       </div>
       <div class="presale-phase card-2">
         <div>
-        <img src="assets/pictures/Ellipse 19.png" alt="Phase two">
+        <img src="assets/pictures/Ellipse 19.png" alt="">
         <p>02</p>
         </div>
         <h3>Phase Two</h3>
@@ -131,7 +146,7 @@
       </div>
       <div class="presale-phase card-3">
         <div>
-        <img src="assets/pictures/Ellipse 20.png" alt="Phase three">
+        <img src="assets/pictures/Ellipse 20.png" alt="">
         <p>03</p>
         </div>
         <h3>Phase Three</h3>
@@ -155,6 +170,22 @@
       <div class="buy-03">
         <p>Then after you will received your $WNTR to your address within 24hours.</p>
       </div>
+    </section>
+    <section class="audio" id="audio">
+      <div class="audio-div">
+        <h3>Listen: Tokners Overview</h3>
+        <audio controls>
+        <source src="assets/files/harvard.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+      <details class="audio-transcript">
+    <summary>View transcript</summary>
+    <p>
+       The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with hand. A zestful food is the hot cross bun.
+    </p>
+    </details>
+
     </section>
   <footer>
     <ul class="footer-links">

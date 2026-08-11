@@ -1,0 +1,102 @@
+.creators-holders {
+  display: flex;
+  gap: 32px;
+
+  padding: 60px 5%;
+  flex-wrap: wrap;
+}
+
+.ch-card {
+  background-color: #14141f;
+  border-radius: 16px;
+  padding: 40px;
+  flex: 1 1 400px;
+
+  max-width: 560px;
+}
+
+.ch-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+
+.ch-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.ch-highlight {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.ch-card p {
+  color: #a0a0b0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.ch-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ch-learn-more svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ch-card-creators .ch-icon {
+  background-color: #22c55e;
+}
+
+.ch-card-creators .ch-icon svg {
+  fill: #14141f;
+}
+
+.ch-card-creators .ch-highlight,
+.ch-card-creators .ch-learn-more {
+  color: #22c55e;
+}
+
+/* Holders — blue */
+.ch-card-holders .ch-icon {
+  background-color: #3b82f6;
+}
+
+.ch-card-holders .ch-icon svg {
+  fill: #14141f;
+}
+
+.ch-card-holders .ch-highlight,
+.ch-card-holders .ch-learn-more {
+  color: #3b82f6;
+}
+
+.ch-card a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 480px) {
+  .creators-holders {
+    flex-direction: column;
+  }
+  .ch-card {
+    max-width: 100%;
+  }
+}
